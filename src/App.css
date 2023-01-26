@@ -141,7 +141,7 @@ top:5px;
   display:inline-block;
   font-size:1.2rem;
   font-weight:600;
-  margin:.5rem .25rem 0;
+  margin:1.5rem .25rem 0;
   line-height:1;
 }
 
@@ -156,6 +156,10 @@ top:5px;
   right:1rem;
 }
 
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Quantity Level */
 
@@ -163,9 +167,9 @@ top:5px;
   color:#fff;
 }
 
-.level-low { background-color:#a94442; }
-.level-medium { background-color:#8a6d3b; }
-.level-high { background-color:#3c763d; }
+.level-low { background-color:#a94442; padding: 0 6px;}
+.level-medium { background-color:#8a6d3b; padding: 0 6px;}
+.level-high { background-color:#3c763d; padding: 0 6px;}
 
 
 /* Media Queries */

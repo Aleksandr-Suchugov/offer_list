@@ -27,8 +27,10 @@ export default function ItemList(props) {
         </div>
         <div className="item-details">
           <p className="item-title">{title}</p>
-          <p className="item-price">{currency[item.currency_code] ? `${currency[item.currency_code]} ${item.price}` : `${item.price} ${item.currency_code}`}</p>
-          <p className="item-quantity">{item.quantity} left</p>
+          <div className="item-footer">
+            <p className="item-price">{currency[item.currency_code] ? `${currency[item.currency_code]} ${item.price}` : `${item.price} ${item.currency_code}`}</p>
+            <p className={classQuantity}>{item.quantity} left</p>
+          </div>
         </div>
       </>
   );
